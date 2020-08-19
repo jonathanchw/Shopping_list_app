@@ -1,0 +1,53 @@
+.container {
+  background: #159C09;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+  min-height: 66.7px;
+  padding: 5px;
+  position: relative;
+}
+
+
+
+.menu {
+  position: absolute;
+  left: 7.94%;
+  top: 15.92%;
+  background-color: #fff;
+  padding: 3px;
+  display: flex;
+  border: none;
+  border-radius: 3px;
+}
+
+.listTitle {
+  position: absolute;
+  left: 19.17%;
+  top: 14.38%;
+  color: #FFFFFF;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.cashContainer {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  left: 61.17%;
+  top: 60.38%;
+}
+
+.moneyTitle {
+  color: #fff;
+  margin: 0 6px;
+}
+
+.moneyDisplay {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+  background-color: #fff;
+  border: 2px solid #15ff00;
+  min-width: 70px;
+
+}

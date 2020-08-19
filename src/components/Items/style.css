@@ -1,0 +1,29 @@
+.container_list {
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 8px ;
+}
+
+.ul_list {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5px;
+}
+
+.li_list {
+  list-style: none;
+}
+
+.btn_check{
+  background-color:#00FF47;
+  color: #555;
+  border: none;
+  padding: 3px 5px;
+}
+.btn_delete{
+  background-color:#FE5757;
+ 
+  border: none;
+  padding: 3px 5px;
+}

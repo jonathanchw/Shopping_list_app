@@ -1,0 +1,8 @@
+.column-Titles ul {
+  color: #666;
+  margin: 15px 10px;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  max-width: 190px;
+}
