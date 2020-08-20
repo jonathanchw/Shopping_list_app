@@ -1,25 +1,36 @@
 import React from 'react';
 import useInputItemState from '../useInputItemState';
-
+import './style.css';
 const InputItem = ({ saveItem }) => {
 
-  const { item, handleChange, reset } = useInputItemState('');
+  const {item, reset, handleChange} = useInputItemState({
+    cantidad: "",
+    descripcion: ""
+  });
 
   return (
-    <form onSubmit={(e)=>{
+    <form className="container_form" onSubmit={(e) => {
       e.preventDefault();
-      saveItem(item);
+      saveItem( item );
       reset();
     }}>
-      <input
+      <input className="input_cantidad"
+        name="cantidad"
         type="text"
-        placeholder="introduce un producto"
+        placeholder="Introduce la cantidad"
         onChange={handleChange}
-        value={item}
+        value={item.cantidad}
       />
+      <input className="input_descripcion"
+        name="descripcion"
+        type="text"
+        placeholder="Introduce un producto"
+        onChange={handleChange}
+        value={item.descripcion}
+      />
+      <input className="input_submit" type="submit" value="Añadir" />
     </form>
   );
 };
-
 
 export default InputItem;
