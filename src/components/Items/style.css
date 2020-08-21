@@ -1,13 +1,12 @@
 .container_list {
-  width: 95%;
+  width: 350px;
   margin: 0 auto;
-  margin-bottom: 8px ;
+  margin-bottom: 8px;
 }
 
 .ul_list {
   width: 100%;
   display: flex;
-  justify-content: space-around;
   margin-bottom: 5px;
 }
 
@@ -15,15 +14,35 @@
   list-style: none;
 }
 
-.btn_check{
-  background-color:#00FF47;
+.li_list_cantidad {
+  list-style: none;
+  width: 40px;
+  margin: 0 10px;
+}
+
+.li_list_descripcion {
+  list-style: none;
+  width: 150px;
+  margin: 0 0px;
+}
+
+.li_list_precio {
+  list-style: none;
+  width: 50px;
+  margin: 0 0px;
+}
+
+.btn_check {
+
+  background-color: #00FF47;
   color: #555;
   border: none;
   padding: 3px 5px;
+  margin: 0 5px;
 }
-.btn_delete{
-  background-color:#FE5757;
- 
+
+.btn_delete {
+  background-color: #FE5757;
   border: none;
   padding: 3px 5px;
 }

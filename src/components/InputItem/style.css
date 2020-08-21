@@ -1,0 +1,30 @@
+.container_form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 20px auto;
+}
+
+.input_cantidad {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+
+}
+
+.input_descripcion,
+.input_cantidad {
+  margin: 2px;
+  padding: 3px;
+  border: 1px solid #999;
+  border-radius: 3px;
+}
+
+.input_submit{
+  background-color: #159C09;
+  border: none;
+  border-radius: 3px;
+  padding: 3px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}

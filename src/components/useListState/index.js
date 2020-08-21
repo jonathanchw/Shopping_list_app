@@ -6,9 +6,9 @@ export default (initialValue) => {
   return {
     list,
     addItem: (itemText) => {
-      const trimmedText = itemText.trim();
+      const trimmedText = itemText.descripcion.trim();
       if (trimmedText.length > 0) {
-        setList([...list, trimmedText])
+        setList([...list, itemText])
       };
     },
     deleteItem: (itemIndex) => {

@@ -5,9 +5,17 @@ export default (initialValue) => {
   return {
     item,
     handleChange: (e) => {
-      setItem(e.target.value);
+      const value = e.target.value;
+      setItem({
+        ...item,
+        [e.target.name]: value
+  
+      });
     },
-    reset: () => setItem('')
+    reset: () => setItem({
+      cantidad: "",
+      descripcion: ""
+    })
     
   }
 }
