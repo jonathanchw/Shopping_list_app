@@ -1,0 +1,22 @@
+.cashContainer {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  left: 61.17%;
+  top: 60.38%;
+}
+
+.moneyTitle {
+  color: #fff;
+  margin: 0 6px;
+}
+
+.moneyDisplay {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+  background-color: #fff;
+  border: 2px solid #15ff00;
+  min-width: 70px;
+
+}

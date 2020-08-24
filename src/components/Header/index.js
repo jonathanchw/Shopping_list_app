@@ -1,7 +1,11 @@
 import React from "react";
 import "./style.css";
+import CashContainer from "../CashContainer";
+
+
 
 const Header = () => {
+
   return (
     <div className="container">
 
@@ -13,14 +17,8 @@ const Header = () => {
       <div className="listTitle">
         <h2>Compra de Supermercado</h2>
       </div>
-
-      <div className="cashContainer">
-        <span className="moneyTitle">Dinero</span>
-        <div className="moneyDisplay">
-          <span>$</span>
-          <span>1000</span>
-        </div>
-      </div>
+ 
+      <CashContainer />
     </div>
   );
 };
