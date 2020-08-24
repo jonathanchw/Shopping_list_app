@@ -4,8 +4,10 @@ import './style.css';
 const InputItem = ({ saveItem }) => {
 
   const {item, reset, handleChange} = useInputItemState({
-    cantidad: "",
-    descripcion: ""
+    cantidad:"",
+    descripcion: "",
+    precio: 0,
+    check : false
   });
 
   return (
@@ -16,7 +18,7 @@ const InputItem = ({ saveItem }) => {
     }}>
       <input className="input_cantidad"
         name="cantidad"
-        type="text"
+        type="number"
         placeholder="Introduce la cantidad"
         onChange={handleChange}
         value={item.cantidad}

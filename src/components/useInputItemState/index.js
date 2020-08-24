@@ -14,7 +14,9 @@ export default (initialValue) => {
     },
     reset: () => setItem({
       cantidad: "",
-      descripcion: ""
+      descripcion: "",
+      precio: 0,
+      check: false
     })
     
   }

@@ -26,6 +26,14 @@
   margin: 0 0px;
 }
 
+.li_list_descripcion_Check {
+  list-style: none;
+  width: 150px;
+  margin: 0 0px;
+  text-decoration: line-through black 2px solid;
+  opacity: 0.6;
+}
+
 .li_list_precio {
   list-style: none;
   width: 50px;
@@ -38,11 +46,20 @@
   color: #555;
   border: none;
   padding: 3px 5px;
-  margin: 0 5px;
+  margin: 0 5px 0 25px;
 }
 
 .btn_delete {
   background-color: #FE5757;
   border: none;
   padding: 3px 5px;
+}
+.input_precio{
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  
+  padding: 3px;
+  border: 1px solid #999;
+  border-radius: 3px;
+  width: 50px;
 }

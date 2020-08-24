@@ -3,20 +3,22 @@ import Items from '../Items/';
 import './style.css';
 import InputItem from "../InputItem";
 import useListState from "../useListState";
+import Addbutton from "../Addbutton";
 
 function List() {
-  const { list, addItem, deleteItem } = useListState([]);
+  const { list, addItem, deleteItem, checkItem, addPrecio} = useListState([]);
 
   return (
     <div className="list_Container">
       <div className="column-Titles">
         <ul>
-          <li>Cant</li>
-          <li>Articulo</li>
-          <li>Precio</li>
+          <li className="cant">Cant</li>
+          <li className="articulo">Articulo</li>
+          <li className="precio">Precio</li>
         </ul>
       </div>
-      <Items listItems={list} deleteItem={deleteItem} />
+      <Items listItems={list} deleteItem={deleteItem} checkItem={checkItem} addPrecio={addPrecio}/>
+      <Addbutton />
       <InputItem saveItem={addItem} />
     </div>
   );
