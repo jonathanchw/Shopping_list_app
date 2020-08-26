@@ -8,22 +8,22 @@ const Items = ({ listItems, deleteItem, checkItem, addPrecio, goBack }) => {
     <div className="container_list">
       {listItems.map((item, index) => (
         <ul className="ul_list" key={index.toString()}>
+
           <li className="li_list_cantidad">{item.cantidad}</li>
+
           {item.check === true ? <li className="li_list_descripcion_Check" >{item.descripcion}</li>
-            :
-            <li className="li_list_descripcion">{item.descripcion}</li>
-          }
+            : <li className="li_list_descripcion">{item.descripcion}</li>}
+
           <li className="li_list_precio">
             <InputPrecio saveItem={addPrecio} getIndex={index} />
           </li>
 
-
           <div className="checkBackContainer">
             {item.check === true ?
               <ul className="checkedContainer">
-              <li className="li_list">
-                <img onClick={() => { goBack(item) }} className="btn_back" src={goback} alt="back"></img>
-              </li>
+                <li className="li_list">
+                  <img onClick={() => { goBack(item) }} className="btn_back" src={goback} alt="back"></img>
+                </li>
               </ul>
               :
               <ul className="checkedContainer">

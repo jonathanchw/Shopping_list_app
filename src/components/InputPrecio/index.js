@@ -8,6 +8,7 @@ const InputPrecio = ({ saveItem, getIndex }) => {
       <input className="input_precio"
         name="precio"
         type="number"
+        step=".01"
         onChange={(e) => {
           e.preventDefault();
           saveItem({

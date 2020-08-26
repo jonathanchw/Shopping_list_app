@@ -2,7 +2,9 @@ import React from 'react';
 import './style.css';
 import thumbUp from '../../assets/thumbUp.png';
 
+
 const ShowTotal=()=> {
+ 
   return (
     <div className="ShowTotal_container">
       <div className="ShowTotal_Money">

@@ -4,7 +4,10 @@ import './style.css';
 const InputItem = ({ saveItem }) => {
 
   const { item, reset, handleChange } = useInputItemState({
-
+    cantidad: "",
+    descripcion: "",
+    precio: 0,
+    check: false
   });
 
   return (
