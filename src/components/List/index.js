@@ -4,9 +4,9 @@ import './style.css';
 import InputItem from "../InputItem";
 import useListState from "../useListState";
 import Addbutton from "../Addbutton";
-
+import ShowTotal from '../ShowTotal';
 function List() {
-  const { list, addItem, deleteItem, checkItem, addPrecio, goBack } = useListState([]);
+  const { list, addItem, deleteItem, checkItem, addPrecio, goBack, total , showMessage } = useListState([]);
 
   return (
     <div className="list_Container">
@@ -27,6 +27,7 @@ function List() {
 
       <Addbutton />
       <InputItem saveItem={addItem} />
+      <ShowTotal total={total} showMessage={showMessage}/>
     </div>
   );
 }

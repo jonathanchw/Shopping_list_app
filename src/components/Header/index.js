@@ -1,11 +1,11 @@
 import React from "react";
 import "./style.css";
 import CashContainer from "../CashContainer";
-
+import useListState from '../useListState';
 
 
 const Header = () => {
-
+const {addCash} = useListState([]);
   return (
     <div className="container">
 
@@ -18,7 +18,7 @@ const Header = () => {
         <h2>Compra de Supermercado</h2>
       </div>
  
-      <CashContainer />
+      <CashContainer saveItem={addCash}/>
     </div>
   );
 };
