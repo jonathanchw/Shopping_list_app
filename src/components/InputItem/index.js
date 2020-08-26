@@ -3,17 +3,14 @@ import useInputItemState from '../useInputItemState';
 import './style.css';
 const InputItem = ({ saveItem }) => {
 
-  const {item, reset, handleChange} = useInputItemState({
-    cantidad:"",
-    descripcion: "",
-    precio: 0,
-    check : false
+  const { item, reset, handleChange } = useInputItemState({
+
   });
 
   return (
     <form className="container_form" onSubmit={(e) => {
       e.preventDefault();
-      saveItem( item );
+      saveItem(item);
       reset();
     }}>
       <input className="input_cantidad"

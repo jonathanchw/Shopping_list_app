@@ -1,17 +1,10 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './style.css';
 
-const Addbutton= ()=> {
-    const [, setaddbutton]= useState(false);
-
-const handleChange = ()=>{
-  setaddbutton(true)
-
-}
-
+const Addbutton = () => {
 
   return (
-   <button className="addbutton" onClick={handleChange}>+</button>
+    <button className="addbutton">+</button>
   )
 }
 export default Addbutton;

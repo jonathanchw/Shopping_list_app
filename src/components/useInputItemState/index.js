@@ -9,7 +9,6 @@ export default (initialValue) => {
       setItem({
         ...item,
         [e.target.name]: value
-  
       });
     },
     reset: () => setItem({
@@ -18,6 +17,6 @@ export default (initialValue) => {
       precio: 0,
       check: false
     })
-    
+
   }
 }

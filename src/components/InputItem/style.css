@@ -1,8 +1,12 @@
 .container_form {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 60%;
   margin: 20px auto;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  padding: 10px;
 }
 
 .input_cantidad {
@@ -19,7 +23,7 @@
   border-radius: 3px;
 }
 
-.input_submit{
+.input_submit {
   background-color: #159C09;
   border: none;
   border-radius: 3px;
