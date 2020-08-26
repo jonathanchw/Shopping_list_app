@@ -20,3 +20,11 @@
   min-width: 70px;
 
 }
+
+.moneyDisplay input {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  border: none;
+  padding: 2px;
+  width: 55px;
+}
