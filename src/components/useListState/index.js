@@ -5,18 +5,9 @@ export default (initialValue) => {
   const [list, setList] = useState(initialValue);
 
 
-  //--total devuelve la suma de todos los precios de los items----//
-  const arrPrecio = [0];
-  list.map((item) => {
-    return item.precio !== 0 ? arrPrecio.push(parseFloat(item.precio, 10)) : null
-  });
-  const total = arrPrecio.reduce((acumulator, current) => acumulator + current);
-  const showMessage = false;
-
   return {
     list,
-    total,
-    showMessage,
+
     addItem: (itemText) => {
       const trimmedText = itemText.descripcion.trim();
       if (trimmedText.length > 0) {
@@ -37,6 +28,8 @@ export default (initialValue) => {
     addPrecio: (itemPrecio) => {
       (list[itemPrecio.getIndex].precio = itemPrecio.value)
       setList([...list]);
+
+
     },
 
     goBack: (itemIndex) => {
@@ -44,11 +37,5 @@ export default (initialValue) => {
       setList([...list])
     },
 
-    addCash: (showcash) => {
-      /*por resolver aun logica para que showmessage cambie.
-      const cash = parseFloat(showcash.value, 10);
-           console.log(total)
-*/
-    }
   }
 }

@@ -1,15 +1,18 @@
-import React from "react";
+import React, {useState} from "react";
 import Items from '../Items/';
 import './style.css';
 import InputItem from "../InputItem";
 import useListState from "../useListState";
 import Addbutton from "../Addbutton";
 import ShowTotal from '../ShowTotal';
+import CashContainer from "../CashContainer";
 function List() {
-  const { list, addItem, deleteItem, checkItem, addPrecio, goBack, total , showMessage } = useListState([]);
-
+  const { list, addItem, deleteItem, checkItem, addPrecio, goBack} = useListState([]);
+  const [ cash, setCash]= useState(0);
+  
   return (
     <div className="list_Container">
+    <CashContainer setCash={setCash} />
       <div className="column-Titles">
         <ul>
           <li className="cant">Cant</li>
@@ -27,7 +30,7 @@ function List() {
 
       <Addbutton />
       <InputItem saveItem={addItem} />
-      <ShowTotal total={total} showMessage={showMessage}/>
+      <ShowTotal list={list} cash={cash} />
     </div>
   );
 }

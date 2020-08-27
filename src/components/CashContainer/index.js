@@ -1,10 +1,8 @@
 import React from 'react';
 import './style.css';
 
-
-const CashContainer = ({saveItem}) => {
-
-  return (
+const CashContainer = ({setCash}) => {
+    return (
     <div className="cashContainer">
       <span className="moneyTitle">Dinero</span>
       <div className="moneyDisplay">
@@ -13,12 +11,12 @@ const CashContainer = ({saveItem}) => {
         type="number"
         placeholder="Dinero"
         step=".01"
-        onChange={(e) => {
+        onChange={(e)=>{
           e.preventDefault();
-          saveItem({
-            value: e.target.value,
-            });
-        }}/>
+          setCash( parseFloat(e.target.value))
+        }}
+        
+        />
         
       </div>
     </div>
