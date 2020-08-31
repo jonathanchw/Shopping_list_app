@@ -8,6 +8,8 @@
   width: 97%;
   display: flex;
   margin-bottom: 5px;
+  
+  align-items: center;
 }
 
 .li_list {
@@ -59,7 +61,7 @@
   color: #555;
   border: none;
   margin: 0 5px;
-  padding:  3px 6px;
+  padding:  7px 8px;
   cursor: pointer;
   
 }
@@ -67,7 +69,7 @@
   background-color: #FE5757;
   border: none;
   margin: 0 5px;
-  padding:  3px 6px;
+  padding:  7px 8px;
   cursor: pointer;
 }
 
