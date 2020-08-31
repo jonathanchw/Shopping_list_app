@@ -7,11 +7,11 @@
 
 .App {
   max-width: 375px;
-  min-height: 667px;
+  min-height: 100vh;
   margin: 0 auto;
   background: #FFFFFF;
-  border: 4px solid #000000;
+  border: 3px solid #000000;
   box-sizing: border-box;
-  border-radius: 21px;
+  border-radius: 0px;
   position: relative;
 }
