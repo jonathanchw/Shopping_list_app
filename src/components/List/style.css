@@ -1,8 +1,15 @@
 .column-Titles ul {
   color: #666;
-  margin: 15px 10px;
+  margin: 15px 5px;
   display: flex;
   list-style: none;
-  justify-content: space-around;
-  max-width: 190px;
+  max-width: 250px;
+}
+
+.cant {
+  margin-right: 15px;
+}
+
+.articulo {
+  margin-right: 80px;
 }
