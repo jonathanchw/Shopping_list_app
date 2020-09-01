@@ -21,17 +21,16 @@ function List() {
     initialCash = (dataCash);
   }
 
-  const { list, addItem, deleteItem, checkItem, addPrecio, goBack } = useListState(initialArr);
+  const { list, addItem, deleteItem, checkItem, addPrecio, goBack} = useListState(initialArr);
   const [cash, setCash] = useState(initialCash);
 
   localStorage.setItem("myData", JSON.stringify(list));
   localStorage.setItem("myCash", JSON.stringify(cash));
 
-  console.log(list)
-  console.log(cash)
+  
   return (
     <div className="list_Container">
-      <CashContainer setCash={setCash} />
+      <CashContainer setCash={setCash} cash={cash} />
       <div className="column-Titles">
         <ul>
           <li className="cant">Cant</li>

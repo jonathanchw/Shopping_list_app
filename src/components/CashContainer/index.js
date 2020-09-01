@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 
-const CashContainer = ({setCash}) => {
+const CashContainer = ({setCash, cash}) => {
     return (
     <div className="cashContainer">
       <span className="moneyTitle">Dinero</span>
@@ -15,6 +15,7 @@ const CashContainer = ({setCash}) => {
           e.preventDefault();
           setCash( parseFloat(e.target.value))
         }}
+        value= {cash}
         
         />
         

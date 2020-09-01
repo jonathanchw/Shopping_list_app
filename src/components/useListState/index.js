@@ -28,8 +28,6 @@ export default (initialValue) => {
     addPrecio: (itemPrecio) => {
       (list[itemPrecio.getIndex].precio = itemPrecio.value)
       setList([...list]);
-
-
     },
 
     goBack: (itemIndex) => {

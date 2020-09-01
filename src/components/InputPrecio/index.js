@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.css';
 
-const InputPrecio = ({ saveItem, getIndex }) => {
+const InputPrecio = ({ saveItem, getIndex , precio}) => {
 
   return (
     <div>
@@ -16,6 +16,7 @@ const InputPrecio = ({ saveItem, getIndex }) => {
             getIndex
           });
         }}
+        value={precio}
       />
     </div>
   )

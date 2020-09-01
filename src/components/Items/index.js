@@ -2,11 +2,12 @@ import React from 'react';
 import './style.css';
 import InputPrecio from '../InputPrecio';
 import goback from '../../assets/goBack.png';
-const Items = ({ listItems, deleteItem, checkItem, addPrecio, goBack }) => {
+const Items = ({ listItems, deleteItem, checkItem, addPrecio, goBack}) => {
 
   return (
     <div className="container_list">
       {listItems.map((item, index) => (
+        
         <ul className="ul_list" key={index.toString()}>
 
           <li className="li_list_cantidad">{item.cantidad}</li>
@@ -15,7 +16,7 @@ const Items = ({ listItems, deleteItem, checkItem, addPrecio, goBack }) => {
             : <li className="li_list_descripcion">{item.descripcion}</li>}
 
           <li className="li_list_precio">
-            <InputPrecio saveItem={addPrecio} getIndex={index} />
+            <InputPrecio saveItem={addPrecio} getIndex={index} precio={item.precio} />
           </li>
 
           <div className="checkBackContainer">
