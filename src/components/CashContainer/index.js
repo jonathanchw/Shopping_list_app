@@ -13,7 +13,7 @@ const CashContainer = ({setCash, cash}) => {
         step=".01"
         onChange={(e)=>{
           e.preventDefault();
-          setCash( parseFloat(e.target.value))
+          setCash(parseFloat(e.target.value))
         }}
         value= {cash}
         
