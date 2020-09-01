@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Items from '../Items/';
 import './style.css';
 import InputItem from "../InputItem";
@@ -7,12 +7,31 @@ import Addbutton from "../Addbutton";
 import ShowTotal from '../ShowTotal';
 import CashContainer from "../CashContainer";
 function List() {
-  const { list, addItem, deleteItem, checkItem, addPrecio, goBack} = useListState([]);
-  const [ cash, setCash]= useState(0);
-  
+  let initialArr = []
+  let initialCash = 0;
+
+  if (localStorage.getItem("myData") !== null) {
+    let dataList = localStorage.getItem("myData");
+    dataList = JSON.parse(dataList);
+    initialArr = (dataList);
+  }
+  if (localStorage.getItem("myCash") !== null) {
+    let dataCash = localStorage.getItem("myCash");
+    dataCash = JSON.parse(dataCash);
+    initialCash = (dataCash);
+  }
+
+  const { list, addItem, deleteItem, checkItem, addPrecio, goBack } = useListState(initialArr);
+  const [cash, setCash] = useState(initialCash);
+
+  localStorage.setItem("myData", JSON.stringify(list));
+  localStorage.setItem("myCash", JSON.stringify(cash));
+
+  console.log(list)
+  console.log(cash)
   return (
     <div className="list_Container">
-    <CashContainer setCash={setCash} />
+      <CashContainer setCash={setCash} />
       <div className="column-Titles">
         <ul>
           <li className="cant">Cant</li>
