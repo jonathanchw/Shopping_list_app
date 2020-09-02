@@ -36,8 +36,8 @@ const Addbutton = ({ saveItem }) => {
             horizontal: 'right',
           }}
           transformOrigin={{
-            vertical: 200,
-            horizontal: -30,
+            vertical: 0,
+            horizontal: -5,
           }}
         >
           <InputItem saveItem={saveItem} />
