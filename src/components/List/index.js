@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Items from '../Items/';
 import './style.css';
-import InputItem from "../InputItem";
 import useListState from "../useListState";
 import Addbutton from "../Addbutton";
 import ShowTotal from '../ShowTotal';
@@ -46,8 +45,8 @@ function List() {
         addPrecio={addPrecio}
         goBack={goBack} />
 
-      <Addbutton />
-      <InputItem saveItem={addItem} />
+      <Addbutton saveItem={addItem}/>
+      
       <ShowTotal list={list} cash={cash} />
     </div>
   );
