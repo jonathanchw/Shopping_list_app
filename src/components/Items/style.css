@@ -1,8 +1,26 @@
 .container_list {
+  max-height: 250px;
   width: 350px;
   margin: 0 auto;
   margin-bottom: 8px;
+  overflow: scroll;
+  overflow-x: hidden;
 }
+
+.container_list::-webkit-scrollbar {
+   width:5px;
+}
+
+.container_list::-webkit-scrollbar-track {
+   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+   border-radius: 10px;
+}
+
+.container_list::-webkit-scrollbar-thumb {
+   border-radius: 10px;
+   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
 
 .ul_list {
   width: 97%;
