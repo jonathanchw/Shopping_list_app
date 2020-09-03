@@ -1,22 +1,8 @@
 .container {
   background: #159C09;
- 
   min-height: 75px;
   padding: 5px;
   position: relative;
-}
-
-
-
-.menu {
-  position: absolute;
-  left: 7.94%;
-  top: 15.92%;
-  background-color: #fff;
-  padding: 3px;
-  display: flex;
-  border: none;
-  border-radius: 3px;
 }
 
 .listTitle {
@@ -24,7 +10,8 @@
   left: 19.17%;
   top: 14.38%;
   color: #FFFFFF;
-  font-size: 13px;
-  margin-top: 5px;
-}
+  font-size: 14px;
+  display: flex;
 
+  align-items: center;
+}
