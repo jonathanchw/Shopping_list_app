@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Archivo', sans-serif;
+
+}
+html{
+  overflow-y: hidden;
+  overscroll-behavior-y: none;
 }
 
 .App {
@@ -17,4 +22,5 @@
   box-sizing: border-box;
   border-radius: 0px;
   position: relative;
+  
 }
