@@ -4,6 +4,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 
+import NewListButton from '../NewListButton';
 
 const HamburgerMenu = () => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -15,6 +16,7 @@ const HamburgerMenu = () => {
   const handleClose = () => {
     setAnchorEl(null);
   };
+ 
   return (
     <div>
       <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
@@ -37,10 +39,10 @@ const HamburgerMenu = () => {
         transformOrigin={{
           vertical: -38,
           horizontal: 17,
-        }}
-      >
-        <MenuItem onClick={handleClose}>Nueva Lista</MenuItem>
-        <MenuItem onClick={handleClose}>Borrar Todo</MenuItem>
+        }}>
+        <MenuItem onClick={handleClose}><NewListButton/></MenuItem>
+        <MenuItem onClick={handleClose}>Borrar lista</MenuItem>
+        <MenuItem onClick={handleClose}>Borrar Todos los articulos</MenuItem>
         <MenuItem onClick={handleClose}>Tema</MenuItem>
       </Menu>
     </div>
@@ -48,9 +50,6 @@ const HamburgerMenu = () => {
 }
 export default HamburgerMenu;
 
-/*
-    
-      */
 
 
 

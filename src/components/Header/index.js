@@ -1,21 +1,18 @@
 import React from "react";
 import "./style.css";
 import HamburgerMenu from "../HamburgerMenu";
-import  OpenDownMenu from "../OpenDownMenu";
+import OpenDownMenu from "../OpenDownMenu";
 
 
-const Header = () => {
+const Header = ({nombrelista, nuevaLista, listas}) => {
 
   return (
     <div className="container">
-
-      <HamburgerMenu />
+      <HamburgerMenu nuevaLista={nuevaLista}/>
       <div className="listTitle">
-        <h3>Compras de Supermercado</h3>
-        <OpenDownMenu />
+        <h3>{nombrelista}</h3>
+        <OpenDownMenu listas={listas} />
       </div>
-
-
     </div>
   );
 };

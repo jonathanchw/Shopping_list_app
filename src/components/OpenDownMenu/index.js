@@ -5,13 +5,11 @@ import MenuItem from '@material-ui/core/MenuItem';
 import './style.css';
 
 
-const OpenDownMenu = () => {
+const OpenDownMenu = ({ listas }) => {
   const [anchorEl, setAnchorEl] = useState(null);
-
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
-
   const handleClose = () => {
     setAnchorEl(null);
   };
@@ -36,14 +34,19 @@ const OpenDownMenu = () => {
         }}
         transformOrigin={{
           vertical: -40,
-          horizontal:'right',
-        }}
-      >
+          horizontal: 'right',
+        }}>
 
-      
-        <MenuItem onClick={handleClose}>Compra de supermercado 15/08</MenuItem>
-        <MenuItem onClick={handleClose}>Compra de Charcuteria</MenuItem>
-        <MenuItem onClick={handleClose}>Compras de Limpieza</MenuItem>
+        {listas.length === 0 ?
+          <MenuItem onClick={handleClose}>No hay listas creadas aun</MenuItem>
+          :
+          <div>
+            {listas.map((item, index) => (
+              <MenuItem onClick={handleClose}>{item.nombrelista}</MenuItem>
+            ))}
+          </div>
+        }
+
       </Menu>
     </div>
   )

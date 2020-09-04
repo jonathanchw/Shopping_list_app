@@ -1,0 +1,26 @@
+.container_form_InputNewList {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 250px;
+}
+
+
+.input_nameList {
+  margin: 2px;
+  padding: 4px;
+  border: 1px solid #999;
+  border-radius: 3px;
+}
+
+.input_submit_InputNewList {
+  background-color: #159C09;
+  border: none;
+  border-radius: 3px;
+  margin-top:2px;  
+  padding: 4px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
