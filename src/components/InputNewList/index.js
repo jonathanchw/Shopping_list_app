@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './style.css';
 import useInputItemState from '../useInputItemState';
 const InputNewList = () => {
-  const { item, reset, handleChange } = useInputItemState("");
+  const {  handleChange } = useInputItemState("");
  
 
   return (
