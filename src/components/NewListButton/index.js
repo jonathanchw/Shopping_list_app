@@ -19,8 +19,10 @@ const NewListButton = () => {
   const id = open ? 'simple-popover' : undefined;
   return (
     <div>
-      <MenuItem onClick={handleClick}>Nueva Lista</MenuItem>
-        <Popover
+      <MenuItem onClick={() => {
+        handleClick();
+        handleClose();}}>Nueva Lista</MenuItem>
+      <Popover
         id={id}
         open={open}
         anchorEl={anchorEl}
@@ -34,7 +36,7 @@ const NewListButton = () => {
           horizontal: 35,
         }}
       >
-       <InputNewList/>
+        <InputNewList />
       </Popover>
     </div>
   )

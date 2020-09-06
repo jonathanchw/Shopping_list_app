@@ -13,6 +13,7 @@ const ShowTotal = ({ list, cash }) => {
   const total = arrPrecio.reduce((acumulator, current) => acumulator + current);
 
   const showMessage = (cash > total)
+  const resto = cash - total;
   return (
     <div className="ShowTotal_container">
       <div className="ShowTotal_Money">
@@ -28,7 +29,7 @@ const ShowTotal = ({ list, cash }) => {
         :
         showMessage ?
           <div className="ShowTotal_message">
-            <p>Aun te queda dinero</p>
+            <p>Aun te queda {resto}$</p>
             <img className="thumbUp" src={thumbUp} alt="Thumb Up" />
           </div> :
           <div className="ShowTotal_message">

@@ -22,7 +22,7 @@ function List({ setListas, listas }) {
 
   const { list, addItem, deleteItem, checkItem, addPrecio, goBack } = useListState(initialArr);
   const [cash, setCash] = useState(initialCash);
-  const nombrelista = "Compras de Supermercado 17/08";
+  const nombrelista = "Compras de Supermercado";
 
 
   const nuevaLista = () => {

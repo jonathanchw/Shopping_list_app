@@ -40,7 +40,7 @@ const HamburgerMenu = () => {
           vertical: -38,
           horizontal: 17,
         }}>
-        <MenuItem onClick={handleClose}><NewListButton/></MenuItem>
+        <NewListButton/>
         <MenuItem onClick={handleClose}>Borrar lista</MenuItem>
         <MenuItem onClick={handleClose}>Borrar Todos los articulos</MenuItem>
         <MenuItem onClick={handleClose}>Tema</MenuItem>
