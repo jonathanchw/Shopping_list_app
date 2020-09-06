@@ -10,10 +10,10 @@ const ShowTotal = ({ list, cash }) => {
   list.map((item) => {
     return (item.precio !== 0 && item.precio !== "") ? arrPrecio.push(parseFloat(item.precio, 10)) : null
   });
-  const total = arrPrecio.reduce((acumulator, current) => acumulator + current);
+  const total = Math.round((arrPrecio.reduce((acumulator, current) => acumulator + current)) * 100) / 100;
 
   const showMessage = (cash > total)
-  const resto = cash - total;
+  const resto = Math.round((cash - total) * 100) / 100;
   return (
     <div className="ShowTotal_container">
       <div className="ShowTotal_Money">
@@ -21,7 +21,7 @@ const ShowTotal = ({ list, cash }) => {
         <span>Total</span>
       </div>
 
-      {(cash === 0 || cash === null || isNaN(cash))  ?
+      {(cash === 0 || cash === null || isNaN(cash)) ?
         <div className="ShowTotal_message">
           <p>Ingrese el dinero </p>
           <img className="thumbUp" src={money} alt="Thumb Up" />
