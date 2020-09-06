@@ -8,10 +8,7 @@ function App() {
     let dataListas = localStorage.getItem("myListas");
     intitialListasArr = JSON.parse(dataListas);
      }
-
-
   const [listas, setListas] = useState(intitialListasArr);
-  
   localStorage.setItem("myListas", JSON.stringify(listas));
   return (
     <div className="App">
