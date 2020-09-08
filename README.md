@@ -2,7 +2,7 @@
 This repository contains the code of an application I created for my family. 
 
 ## About the app
-This is a Progressive Web App build on React.js very similar to the classic to do list app but with a couple of additional features and other characteristics that remain to be developed. 
+This is a Progressive Web App built on React.js very similar to the classic to do list app but with a couple of additional features and other characteristics that remain to be developed. 
 
 The main objective of the app is to create a home list of items to be purchased at the supermarket and to establish the money to be spent on that purchase.
 Then once in the supermarket, as the items are obtained you can add the value of the price of each item and the app is in charge of showing the total spent and the rest of the money established, indicating if there is still money left or not. 
