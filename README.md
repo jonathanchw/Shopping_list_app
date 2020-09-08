@@ -1,4 +1,4 @@
-# Shopping:list_app
+# Shopping_list_app
 This repository contains the code of an application I created for my family. 
 
 ## About the app
@@ -8,10 +8,11 @@ The main objective of the app is to create a home list of items to be purchased 
 Then once in the supermarket, as the items are obtained you can add the value of the price of each item and the app is in charge of showing the total spent and the rest of the money established, indicating if there is still money left or not. 
 
 The characteristics that are still to be developed would be: 
-Enable function to create new list.
-Enable function to create delete list.
-Enable function to delete all items from the list.
-Create a function to change color theme to header and background.
+* Create a function to:
+  * Create new list.
+  * Delete list.
+  * Delete all items from the list.
+  * Change color theme to header and background.
 
 ## How to run.
   1. In your terminal, navigate to the repository directory. `...\Shopping_list_app>`
