@@ -22,7 +22,7 @@ const Addbutton = ({ saveItem }) => {
     <div>
       <div className="addbutton">
         <Button onClick={handleClick}>
-          +
+          Agregue Articulo Aca
       </Button>
       </div>
       <div className="popover">
