@@ -27,14 +27,8 @@ The characteristics that are still to be developed would be:
 ### Lighthouse Progressive Web App test
 <img src="screenshots/PWAtest.png" width="300">
 
-### Making a shopping list at home
 <img src="screenshots/screenshot1.png" width="300">
-
-### at the Supermarket
 <img src="screenshots/screenshot2.png" width="300">
-<img src="screenshots/screenshot3.png" width="300">
-<img src="screenshots/screenshot4.png" width="300">
-
 ### Features that remain to be developed. 
 <img src="screenshots/screenshot5.png" width="300">
 <img src="screenshots/screenshot6.png" width="300">
